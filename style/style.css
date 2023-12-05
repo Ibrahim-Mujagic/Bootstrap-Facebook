@@ -1,5 +1,6 @@
 body{
   background-color: rgba(89, 88, 88, 0.084);
+  padding-bottom: 70px;
 }
 
 body p,h1,h2,h3,h4,h5,h6{
@@ -88,10 +89,15 @@ header .nav-header ul li a i{
 }
 
 .cont-page-jumbo .top-section ul li button{
-  padding: 2px 10px ;
+  padding: 2px 10px;
   background-color: #FFFFFF;
   border: 1px solid var(--main-gray);
   border-radius: 3px;
+  color: rgba(0, 0, 0, 0.653);
+}
+
+.cont-page-jumbo .top-section ul li button span{
+  color: rgba(0, 0, 0, 0.653);
 }
 
 .cont-page-jumbo .bottom-section ul{
@@ -228,6 +234,76 @@ header .nav-header ul li a i{
 
 /* FINE FOTO DELLA PAGINA */
 
+.ib-post-card .head-card img{
+  height: 50px;
+  aspect-ratio: 1/1;
+}
+
+
+.ib-post-card .head-card .text-card p{
+  color: var(--main-gray);
+  font-size: .9rem;
+  cursor: default;
+}
+
+.ib-post-card .head-card .text-card p i{
+  font-size: 0.8rem;
+  opacity: .6;
+  margin-left: 2px;
+}
+
+.ib-post-card .head-card .text-card .page-name-action h5,span{
+  color: var(--main-blue);
+  cursor: pointer;
+}
+
+.ib-post-card .image img{
+  height: 260px;
+  object-fit: cover;
+}
+
+.ib-post-card .paragrph p{
+  font-size: .9rem;
+}
+
+.ib-post-card .notification ul {
+  min-height: 40px;
+  align-items: center;
+}
+
+.ib-post-card .notification ul li button{
+  border: none;
+  background-color: transparent;
+  color: var(--main-blue);
+}
+
+.ib-post-card .notification ul li {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.ib-post-card .notification ul li i{
+  font-size: .3rem;
+  color: var(--main-blue);
+}
+
+/* FINE POSTS */
+
+.info-admin-page .info-admin-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 0px ;
+}
+
+.info-admin-page .info-admin-section h5{
+  font-size: 1rem;
+}
+.info-admin-page .info-admin-section p{
+  color: var(--main-blue);
+}
+  /* FINE INFO ADMIN */
 
 /* MEDIA */
 
@@ -245,7 +321,11 @@ header .nav-header ul li a i{
   }
 
 /* FINE SENZIONE JUMBOTRON DELLA PAGINA */
-
+  .container-admin-section{
+    width: 85% ;
+    margin: 0 auto;
+  }
+  /* FINE INFO ADMIN */
 }
 
 @media screen and (max-width: 576px){
@@ -253,5 +333,8 @@ header .nav-header ul li a i{
     background-position: center;
   }
 /* FINE SENZIONE JUMBOTRON DELLA PAGINA */
-
+  .container-admin-section{
+    width: 100%;
+  }
+    /* FINE INFO ADMIN */
 }
