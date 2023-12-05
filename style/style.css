@@ -1,3 +1,11 @@
+body{
+  background-color: rgba(89, 88, 88, 0.084);
+}
+
+body p,h1,h2,h3,h4,h5,h6{
+  margin: 0;
+}
+
 .br{
   border: 1px solid red;
 }
@@ -5,6 +13,7 @@
 header{
   height: 50px;
   background-color: var(--main-blue);
+  margin-bottom: 20px;
 }
 
 header i{
@@ -121,7 +130,106 @@ header .nav-header ul li a i{
 
 /* FINE SENZIONE JUMBOTRON DELLA PAGINA */
 
+.ib-border{
+  border: 1px solid gainsboro;
+}
 
+
+.ib-border-bottom{
+  border-bottom: 1px solid gainsboro;
+}
+
+
+
+.info-page-left-side h5{
+  font-size: 1.1rem;
+}
+
+.info-page-left-side p{
+  font-size: .9rem;
+  color: var(--main-blue);
+  font-weight: 300;
+  max-width: 350px;
+}
+
+.info-page-left-side a{
+  text-decoration: none;
+  color: var(--main-blue);
+}
+
+.info-page-left-side a i{
+  color: var(--main-gray);
+}
+
+/* FINE DESC PAGINA */
+
+.about-page-left-side .ib-about-section{
+  display: flex;
+  align-items: center;
+  gap: 0px 10px;
+}
+
+
+.about-page-left-side .ib-about-section i{
+  color: var(--main-gray);
+  font-size: 1.1rem;
+}
+
+.about-page-left-side .ib-about-section p{
+  font-size: .9rem;
+  font-weight: 300;
+
+}
+
+.about-page-left-side .ib-about-section p span{
+  display: block;
+  color: var(--main-gray);
+}
+
+/* FINE ABOUT PAGINA */
+
+
+.ib-app-section .ib-app-card{
+  display: flex;
+  align-items: center;
+  gap: 0px 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid gainsboro;
+  padding: 8px;
+}
+
+.ib-app-section .ib-app-card img{
+  height: 80px;
+  width: 110px;
+  object-fit: cover;
+}
+
+.ib-app-section .ib-app-card p{
+  font-size: .9rem;
+  font-weight: 300;
+}
+
+
+/*  FINE APPS DELLA PAGINA */
+
+.ib-photo-section .ib-title-photo i{
+  color: var(--main-gray);
+}
+
+.ib-photo-section .ib-card-photo{
+  padding: 5px;
+}
+
+.ib-photo-section .ib-card-photo img{
+  height: 100%;  
+  width: 100%;
+  object-fit: cover;
+}
+
+/* FINE FOTO DELLA PAGINA */
+
+
+/* MEDIA */
 
 @media screen and (max-width:960px) {
   .cont-page-jumbo .bottom-section ul .image-page img{
@@ -131,6 +239,11 @@ header .nav-header ul li a i{
   .cont-page-jumbo .top-section,.cont-page-jumbo .bottom-section ul li:first-child{
     margin-left: 150px;
   }
+
+  .cont-page-jumbo{
+    background-position: center;
+  }
+
 /* FINE SENZIONE JUMBOTRON DELLA PAGINA */
 
 }
